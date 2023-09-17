@@ -52,7 +52,10 @@ const Dashboard = () => {
       <main className="App">
         <div id="dashboard">
           {/* Conditionally render the links based on user authentication */}
-          {user ? (
+          {loading ? (
+            //wait until loading is done before rendering content
+          <p></p>
+        ) : user ? (
             <>
               <Link to="/" id="logo-form">
                 mi<span>grow</span>
@@ -71,8 +74,8 @@ const Dashboard = () => {
             </>
           ) : (
             <>
-              {/* <NavLink to="/sign-in">sign in</NavLink>
-              <NavLink to="/sign-up">sign up</NavLink> */}
+              <NavLink to="/sign-in">sign in</NavLink>
+              <NavLink to="/sign-up">sign up</NavLink>
             </>
           )}
         </div>
