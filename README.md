@@ -1,4 +1,4 @@
-![Project Logo](./screenshots/logo.png)
+<img src="./screenshots/logo.png" width="400" alt="project logo">
 
 ## Description
 
@@ -10,11 +10,11 @@ Migrow is a platform to support migrants seeking help with day-to-day issues suc
 
  The core of the app is a dynamic requests feed where users can:
 
- - view all requests for help\
- - click to expand\
- - filter requests by category/near me\
-
-  ![Requests Feed](./screenshots/requestsfeed.png)
+ - view all requests for help
+ - click to expand
+ - filter requests by category/near me
+   
+<img src="./screenshots/requestsfeed.png" width="400" alt="Requests Feed">
 
  ## Requirements
 
@@ -25,11 +25,11 @@ Migrow is a platform to support migrants seeking help with day-to-day issues suc
 Clone this repository\
 From the project root, run
 
-`npm i` to install dependencies, then
+`npm i` to install dependencies
 
 `npm start` to start the app
 
-- The app should be accessible at localhost:3000 , with backend at localhost:3001
+The app should be accessible at localhost:3000 , with backend at localhost:3001
 
 ## Current List of API Endpoints
 
@@ -60,5 +60,5 @@ We format with prettier: `npm run format-code`
 [Camila](https://github.com/camilamkp)\
 [Jess](https://github.com/jesslyw)\
 [Mariana](https://github.com/marianarausch)\
-[Monica](https://github.com/monicafadul)\
+[Monica](https://github.com/monicafadul)
 
