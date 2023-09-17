@@ -270,7 +270,10 @@ function Home() {
                 <p>
                   <span>
                     We are the team behind <span id="logo-tiniest">migrow</span>
-                    , brought together by <img src={techlabs} id="techlabs" />{" "}
+                    , brought together by <img
+                      src={techlabs}
+                      id="techlabs"
+                    />{" "}
                     in a hybrid <em>UX Design</em> and <em>Web Development</em>{" "}
                     Program.
                   </span>
