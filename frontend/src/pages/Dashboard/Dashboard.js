@@ -71,8 +71,8 @@ const Dashboard = () => {
             </>
           ) : (
             <>
-              <NavLink to="/sign-in">sign in</NavLink>
-              <NavLink to="/sign-up">sign up</NavLink>
+              {/* <NavLink to="/sign-in">sign in</NavLink>
+              <NavLink to="/sign-up">sign up</NavLink> */}
             </>
           )}
         </div>
