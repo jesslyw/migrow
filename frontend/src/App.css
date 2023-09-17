@@ -1,0 +1,182 @@
+@import url("https://fonts.cdnfonts.com/css/bogart");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a min-height for html and body to ensure the content fits */
+html,
+body {
+  height: 100%;
+}
+
+div.app {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
+  height: 100%;
+  width: 100%;
+}
+
+.home,
+.about,
+.aboutteam {
+  margin: 0;
+  padding-inline: 2rem;
+  padding-block: 5rem;
+}
+
+.home {
+  margin: 0;
+  background-color: #dbede9;
+}
+
+.about {
+  background-color: #aacfcf;
+}
+
+.aboutteam {
+  background-color: #94bbb8;
+}
+
+.about-content {
+  margin-inline: auto;
+  max-width: 50rem;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #1b1b1b;
+}
+
+.migrow {
+  margin: 80px 0 40px 0;
+  position: relative;
+  text-align: center;
+}
+
+#slogan {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+#logo {
+  font-family: "Bogart", sans-serif;
+  font-size: 18vb;
+  color: black;
+  text-decoration: none;
+}
+
+#logo span {
+  color: #fdc281;
+}
+
+#logo-tiny {
+  display: block;
+  font-family: "Bogart", sans-serif;
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  justify-content: center;
+  height: 40px;
+  text-transform: lowercase;
+}
+
+#logo-tiny span {
+  color: #fdc281;
+}
+
+#logo-tiny:hover {
+  font-size: 42px;
+  height: 40px;
+}
+
+.form-wrapper #logo-form span {
+  display: flex;
+  color: #fdc281;
+  font-weight: 400;
+  justify-content: center;
+}
+
+#logo-tiniest {
+  font-family: "Bogart", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+#logo-tiniest span {
+  color: #fdc281;
+}
+
+#buttons {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#buttons a {
+  padding: 5px 30px;
+  margin: 40px 10px;
+  color: black;
+  text-decoration: none;
+  transition:
+    transform 0.3s,
+    text-transform 0.3s;
+}
+
+#buttons a:hover {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f6b102;
+  font-size: 17px;
+  transform: scale(1.1);
+}
+
+#icons {
+  position: fixed;
+  text-align: left;
+  padding: 20px;
+}
+
+#icon {
+  width: 40px;
+  padding: 5px 5px;
+  background-color: #e8c262;
+  border-radius: 50%;
+}
+
+#icon:hover {
+  background-color: #f6b102;
+  border-radius: 50%;
+}
+
+#icon-active {
+  width: 40px;
+  padding: 5px 5px;
+  background-color: #fbb400;
+  border-radius: 50%;
+}
+
+#techlabs {
+  width: 70px;
+}
+
+#team {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 20px;
+}

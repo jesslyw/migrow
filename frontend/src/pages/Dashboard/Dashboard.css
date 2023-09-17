@@ -1,0 +1,83 @@
+@import url("https://fonts.cdnfonts.com/css/bogart");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+body {
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  background-color: #fdc281;
+}
+
+section.feed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  align-items: center;
+  background-color: #fcf9f6;
+  border-radius: 6px;
+  box-shadow: 0px 8px 36px #585858;
+  color: #222;
+}
+
+/* Initial styles for the button */
+a.buttons-dashboard,
+.buttons-dashboard {
+  display: inline-grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  width: 80%;
+  background-color: #f7d3ac;
+  border: none;
+  border-radius: 0.5rem;
+  padding-block: 10px;
+  padding-inline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #222;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s; /* Add smooth transition */
+}
+
+/* Styles for the button on hover */
+.buttons-dashboard:hover {
+  text-transform: uppercase;
+  color: black;
+  background-color: #eddbc7; /* New background color on hover */
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+
+/* Initial styles for the button */
+.sign-out-dashboard {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 150px;
+  height: 80px;
+  background-color: #fdc281;
+  border: none;
+  padding-bottom: 1px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s; /* Add smooth transition */
+}
+
+/* Styles for the button on hover */
+.sign-out-dashboard:hover {
+  text-transform: uppercase;
+  color: black;
+  background-color: #fdb86e; /* New background color on hover */
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}
