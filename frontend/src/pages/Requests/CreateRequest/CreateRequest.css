@@ -1,0 +1,227 @@
+@import url("https://fonts.cdnfonts.com/css/bogart");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  background-color: #fdc281;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  background-color: #f9f7f5;
+}
+
+.request {
+  max-width: 400px;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  background-color: #fcf9f6;
+  border-radius: 6px;
+  box-shadow: 0px 8px 36px #585858;
+  color: #222;
+  /* margin-left: auto;
+    margin-right: auto; */
+  margin: auto;
+  margin-top: 10%;
+}
+
+form .request {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  flex-grow: 1;
+  padding-bottom: 10rem;
+  color: #222;
+  font-size: 15px;
+  max-width: 100%;
+  min-width: 220px;
+  background-color: #fcf9f6;
+}
+
+a,
+a:visited {
+  color: #db8a10;
+}
+
+input[type="text"].form-field,
+select.form-field,
+textarea.form-field#description {
+  max-width: 200px;
+}
+
+input[type="text"],
+button.create-request-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  min-width: 300px;
+  max-width: 200px;
+}
+
+textarea {
+  min-height: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  min-width: 300px;
+}
+
+select,
+option {
+  min-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  min-width: 300px;
+}
+
+label,
+button {
+  margin-top: 0.6rem;
+  margin-bottom: 1px;
+}
+
+button.create-request-button {
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-right: 0.25em;
+  background-color: #dc9f5e;
+  color: #fefefe;
+}
+button:hover {
+  background-color: #e8ac6b;
+  color: #fefefe;
+}
+
+button:disabled {
+  border: none;
+  background-color: #cea174;
+  color: #a38f7b;
+  cursor: not-allowed;
+}
+
+.success {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.success-message {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+
+#logo-form {
+  display: flex;
+  font-family: "Bogart", sans-serif;
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  justify-content: center;
+  height: 40px;
+}
+
+#logo-form:hover {
+  font-size: 42px;
+  height: 40px;
+}
+
+#back-dashboard {
+  display: flex;
+  font-family: "Bogart", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  justify-content: center;
+  height: 40px;
+}
+
+#back-dashboard:hover {
+  font-size: 22px;
+  height: 40px;
+}
+
+.form-wrapper #logo-form span {
+  display: flex;
+  color: #fdc281;
+  font-weight: 400;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.instructions {
+  font-size: 0.5rem;
+  border-radius: 0.5rem;
+  background: #222;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: firebrick;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/**/

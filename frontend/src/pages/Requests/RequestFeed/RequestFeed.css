@@ -1,0 +1,149 @@
+/* RequestFeed.css */
+
+div .request-feed {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+div.request-attribute-wrapper > button.request-attribute {
+  width: 200px;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 0%;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgb(239, 231, 231);
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+
+.filter-buttons button {
+  flex: 1; /* Distribute available space evenly */
+  max-width: 10px;
+  min-width: 25%; /* Set a maximum width for each button (adjust spacing as needed) */
+  /* Add button styles (e.g., background color, padding, etc.) */
+  padding: 10px 20px;
+  background-color: #d37108;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family:;
+}
+
+.filter-buttons button:hover {
+  flex: 1; /* Distribute available space evenly */
+  max-width: 10px;
+  min-width: 25%; /* Set a maximum width for each button (adjust spacing as needed) */
+  /* Add button styles (e.g., background color, padding, etc.) */
+  padding: 10px 20px;
+  background-color: #fdc281;
+  color: #d37108;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p.loading-sign {
+  font-family: "Bogart", sans-serif;
+  font-size: 35px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  justify-content: center;
+  height: 40px;
+  text-transform: lowercase;
+  padding-bottom: 0px;
+}
+/* Style for the buttons */
+button#request-category.request-attribute,
+button#request-postcode.request-attribute {
+  border: 2px solid #d37108;
+  border-radius: 5px;
+  color: #d37108;
+  font-weight: 600;
+}
+
+/* Style for the loading message */
+p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the "Sign In Required" message */
+div {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the "Sign In" link */
+a {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: blue; /* You can change the color as needed */
+  text-decoration: underline;
+}
+
+/* Style for the request feed */
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(16, 15, 14);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h3.request-title {
+  font-family: "Bogart", sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+p.feed-instructions {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: "Bogart", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Style the text color within the list items */
+li,
+h3 p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: black; /* Set the text color to black */
+}

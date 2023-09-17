@@ -1,0 +1,247 @@
+/* make sure page renders from a white screen */
+body {
+  height: 100%;
+}
+
+/* Initial styles for the button */
+.sign-out-home {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 150px;
+  height: 80px;
+  background-color: #dbede9;
+  border: none;
+  padding-bottom: 1px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s; /* Add smooth transition */
+}
+
+/* Styles for the button on hover */
+.sign-out-home:hover {
+  text-transform: uppercase;
+  color: black;
+  background-color: #bce0e0; /* New background color on hover */
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+
+.home-logged {
+  display: inline-block;
+}
+
+.visitor {
+  display: inline-block;
+}
+
+.home-visitor {
+  margin: 40px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-inline: auto;
+  display: inline-block;
+  justify-content: center;
+  padding: 5px 30px;
+  color: black;
+  text-decoration: none;
+  transition:
+    transform 0.3s,
+    text-transform 0.3s;
+}
+
+.home-visitor:hover {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f6b102;
+  font-size: 17px;
+  transform: scale(1.1);
+}
+
+.home-visitor:visited {
+  color: black;
+}
+
+.home-nav {
+  margin: 10px;
+  background: #eef6f4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px 30px;
+  color: black;
+  text-decoration: none;
+  transition:
+    transform 0.3s,
+    text-transform 0.3s;
+}
+
+.home-nav:hover {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f6b102;
+  transform: scale(1.1);
+}
+
+.home-nav:visited {
+  color: black;
+}
+
+.nav {
+  padding: 5px 30px;
+  color: black;
+  text-decoration: none;
+  transition:
+    transform 0.3s,
+    text-transform 0.3s;
+}
+
+div {
+  animation: rotate-all 2s 0 infinite linear alternate;
+}
+
+.div1 {
+  width: 40px;
+  height: 40px;
+  background-color: #f6cb67;
+  position: relative;
+  margin: auto;
+  animation: square-to-circle 2.5s 0.5s infinite
+    cubic-bezier(1, 0.015, 0.295, 1.225) alternate-reverse;
+}
+
+.div2 {
+  width: 40px;
+  height: 40px;
+  background-color: #faf9f8;
+  position: relative;
+  margin: auto;
+  animation: square-to-circle2 2.5s 0.42s infinite
+    cubic-bezier(1, 0.015, 0.295, 1.225) alternate-reverse;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.pics {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .pics {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.team-member {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 16px 32px;
+  margin-top: auto;
+}
+
+.track {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+#one {
+  top: 50px;
+}
+
+#two {
+  top: 50px;
+  right: 40px;
+}
+
+#three {
+  top: 50px;
+}
+
+#four {
+  bottom: 30px;
+  left: 40px;
+}
+
+@keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0;
+    background: "";
+    transform: rotate(45deg);
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    background: rgb(235, 172, 151);
+    transform: rotate(135deg);
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background: rgb(248, 197, 101);
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background: rgb(240, 191, 128);
+    transform: rotate(315deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: rgb(235, 172, 151);
+    transform: rotate(404deg);
+  }
+}
+
+@keyframes square-to-circle2 {
+  0% {
+    border-radius: 0 0 0 0;
+    background: "";
+    transform: rotate(45deg);
+  }
+  25% {
+    border-radius: 0 0 50% 0;
+    background: rgb(233, 192, 122);
+    transform: rotate(135deg);
+  }
+  50% {
+    border-radius: 0 0 50% 50%;
+    background: rgb(236, 189, 123);
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 50% 0 50% 50%;
+    background: rgb(250, 193, 87);
+    transform: rotate(315deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: rgb(233, 191, 122);
+    transform: rotate(404deg);
+  }
+}
