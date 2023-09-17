@@ -24,12 +24,16 @@ function RequestFeed() {
     } else {
       url = API_ENDPOINTS.GET_ALL_REQUESTS;
     }
-
+    // Reset the error state to null before making the fetch request
+    setError(null);
     // Fetch requests from the specified endpoint
     fetch(url)
       .then((response) => {
         if (response.status === 401) {
           throw new Error("Sign In Required");
+        }
+        if (response.status === 500) {
+          throw new Error("No Requests Found");
         }
         return response.json();
       })
@@ -101,34 +105,39 @@ function RequestFeed() {
       </div>
 
       <p className="feed-instructions">click on each request to know more</p>
-      <ul>
-        {requests.map((request) => (
-          <li key={request.id}>
-            <div
-              className="request-box"
-              onClick={() => handleRequestClick(request.id)}
-            >
-              <h3 className="request-title">{request.title}</h3>
 
-              <p className="request-user">{`${request.users.first_name} ${request.users.last_name}`}</p>
-              <div className="request-attribute-wrapper">
-                <button className="request-attribute" id="request-category">
-                  {categoryMap[request.category_id] || "Unknown"}
-                </button>
+      {error === "No Requests Found" ? (
+        <p>No requests found.</p>
+      ) : (
+        <ul>
+          {requests.map((request) => (
+            <li key={request.id}>
+              <div
+                className="request-box"
+                onClick={() => handleRequestClick(request.id)}
+              >
+                <h3 className="request-title">{request.title}</h3>
 
-                <button className="request-attribute" id="request-postcode">
-                  {request.postcode}
-                </button>
-              </div>
-              {expandedRequests[request.id] && (
-                <div className="request-description">
-                  <p>{request.description}</p>
+                <p className="request-user">{`${request.users.first_name} ${request.users.last_name}`}</p>
+                <div className="request-attribute-wrapper">
+                  <button className="request-attribute" id="request-category">
+                    {categoryMap[request.category_id] || "Unknown"}
+                  </button>
+
+                  <button className="request-attribute" id="request-postcode">
+                    {request.postcode}
+                  </button>
                 </div>
-              )}
-            </div>
-          </li>
-        ))}
-      </ul>
+                {expandedRequests[request.id] && (
+                  <div className="request-description">
+                    <p>{request.description}</p>
+                  </div>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
